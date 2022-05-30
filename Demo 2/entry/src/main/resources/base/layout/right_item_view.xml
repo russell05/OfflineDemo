@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:width="match_parent"
+    ohos:height="match_content"
+    ohos:orientation="vertical"
+    ohos:padding="4vp"
+    >
+
+    <Button
+        ohos:id="$+id:button_right_item"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text_size="10fp"
+        ohos:text="高度"
+        ohos:background_element="$graphic:top_button"
+        ohos:top_margin="20"
+        ohos:horizontal_center="true"
+        ohos:element_left="$media:EFB_OnFlight_height"
+        ohos:element_padding="5vp"
+        />
+
+    <Text
+        ohos:id="$+id:item_text"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:horizontal_center="true"
+        ohos:below="$id:button_right_item"
+        ohos:top_margin="5fp"
+        ohos:text_size="16fp"
+        ohos:text_color="#000000"
+        ohos:text_font="sans-serif-medium"
+        ohos:text_weight="700"
+        ohos:text="-- m"
+        />
+</DependentLayout>

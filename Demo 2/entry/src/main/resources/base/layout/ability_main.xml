@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        ohos:id="$+id:mapview"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        />
+
+    <Image
+        ohos:id="$+id:image_type"
+        ohos:width="50vp"
+        ohos:height="50vp"
+        ohos:image_src="$media:realtime_map_type_normal"
+        ohos:background_element="$graphic:button"
+        ohos:top_margin="100vp"
+        ohos:left_margin="15vp"
+        ohos:bottom_margin="15vp"
+        />
+
+    <Button
+        ohos:id="$+id:button_plus"
+        ohos:width="50vp"
+        ohos:height="50vp"
+        ohos:text_size="40fp"
+        ohos:text="+"
+        ohos:background_element="$graphic:top_button"
+        ohos:top_margin="200vp"
+        ohos:left_margin="15vp"
+        />
+
+    <Button
+        ohos:id="$+id:button_minus"
+        ohos:width="50vp"
+        ohos:height="50vp"
+        ohos:text_size="40fp"
+        ohos:text="-"
+        ohos:background_element="$graphic:top_button"
+        ohos:top_margin="252vp"
+        ohos:left_margin="15vp"
+        />
+
+    <Text
+        ohos:id="$+id:tips_text"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:horizontal_center="true"
+        ohos:top_margin="30fp"
+        ohos:left_margin="15fp"
+        ohos:right_margin="15fp"
+        ohos:text_size="16fp"
+        ohos:text_color="white"
+        ohos:text_font="sans-serif-medium"
+        ohos:text_weight="700"
+        ohos:text="这是一条提示信息"
+        ohos:layout_alignment="top|center"
+        ohos:text_alignment="center"
+        ohos:left_padding="15fp"
+        ohos:right_padding="15fp"
+        ohos:top_padding="10fp"
+        ohos:bottom_padding="10fp"
+        ohos:background_element="$graphic:button"
+        />
+
+
+</StackLayout>

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "bundleName": "com.example.bdtrack",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "description": "$string:entry_MainAbility",
+    "name": "com.example.bdtrack.MyApplication",
+    "package": "com.example.bdtrack",
+    "mainAbility": "com.example.bdtrack.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar"
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.bdtrack.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.bdtrack.MainAbility"
+          ],
+          "when": "always"
+        },
+        "name": "ohos.permission.GET_BUNDLE_INFO"
+      },
+      {
+        "usedScene": {
+          "ability": [
+            "com.example.bdtrack.MainAbility"
+          ],
+          "when": "always"
+        },
+        "name": "ohos.permission.GET_BUNDLE_INFO_PRIVILEGED"
+      },
+      {
+        "usedScene": {
+          "ability": [
+            "com.example.bdtrack.MainAbility"
+          ],
+          "when": "always"
+        },
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "usedScene": {
+          "ability": [
+            "com.example.bdtrack.MainAbility"
+          ],
+          "when": "always"
+        },
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "usedScene": {
+          "ability": [
+            "com.example.bdtrack.MainAbility"
+          ],
+          "when": "always"
+        },
+        "reason": "需要获取写入权限",
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      }
+    ]
+  }
+}
